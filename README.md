@@ -78,7 +78,7 @@ Hesabi AI consists of 8 distinct, integrated systems delivered across 4 phases:
 
 ## ⚙️ Local Setup & Installation
 
-### Prerequisites
+## Prerequisites
 - [Node.js](https://nodejs.org/) (v20+)
 - [MongoDB Atlas](https://www.mongodb.com/atlas) account
 - [Anthropic Console](https://console.anthropic.com/) account (Claude API key)
