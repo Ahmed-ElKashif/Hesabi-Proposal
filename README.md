@@ -1,15 +1,28 @@
-# Hesabi AI (حسابي)
+# HESABI AI (حسابي)
 
-> **Arabic-first AI accounting SaaS targeting Saudi SMEs.**
+> **Arabic-first AI accounting SaaS & Mobile App targeting Saudi SMEs.**
 
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19-blue?logo=react)](https://react.dev/)
+[![React Native](https://img.shields.io/badge/React_Native-Expo-61DAFB?logo=react)](https://reactnative.dev/)
 [![Node.js](https://img.shields.io/badge/Node.js-22-green?logo=node.js)](https://nodejs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?logo=mongodb)](https://www.mongodb.com/)
 [![Claude](https://img.shields.io/badge/AI-Claude_Sonnet_3.5-D97757?logo=anthropic)](https://www.anthropic.com/)
 [![Socket.io](https://img.shields.io/badge/WebSocket-Socket.io-black?logo=socket.io)](https://socket.io/)
 
-**Developer:** [Ahmed ElKashif on GitHub](https://github.com/Ahmed-ElKashif) | [LinkedIn](https://www.linkedin.com/in/ahmed-elkashif/)
+## 👥 Development Team (4 Engineers, 1 Shared Goal)
+
+- **Eng. Mohamed Negm:** Senior Backend Engineer (Accounting Domain & ZATCA)
+- **Eng. Abdelrahman Hossam:** Senior Frontend & Mobile Engineer (UI/UX & Mobile Lead)
+- **Eng. Abdelrahman Ali:** Frontend Engineer (React Components)
+- **Eng. Ahmed ElKashif:** Backend Engineer (AI / RAG Systems & DevOps)
+
+---
+
+## 💰 Budget & Timeline
+- **Duration:** 12 Months (4 Phases)
+- **Total Investment:** $22,500 USD (SAR 84,375)
+- **Breakdown:** $2,000/mo (Phases 1-3) & $1,500/mo (Phase 4)
 
 ---
 
@@ -30,17 +43,18 @@
 
 ---
 
-## 🏗️ Core Architecture (Phase 1)
+## 🏗️ Core Architecture (12-Month Scope)
 
-Hesabi AI consists of 7 distinct, integrated systems:
+Hesabi AI consists of 8 distinct, integrated systems delivered across 4 phases:
 
 1. **Landing Page:** Next.js (SSR/SSG) configured for optimal Arabic SEO on Google.
 2. **Web Dashboard:** React SPA with Chart.js and Socket.io for live KPI updates (Revenue, Expenses, Net Balance).
-3. **Admin Portal:** Protected `/admin` route with Role-Based Access Control (RBAC) to manage users and subscriptions.
-4. **Backend API:** Node.js + Express with JWT authentication, 2FA, and rate-limiting.
-5. **WhatsApp Bot:** Meta Cloud API webhook connecting directly to the Node.js backend.
-6. **Payment Gateway:** Moyasar integration supporting Mada, Sadad, and Apple Pay, with automated webhook-driven subscription upgrades/downgrades.
-7. **AI & RAG Pipeline:** Claude Sonnet backed by MongoDB Atlas Vector Search and `voyage-multilingual-2` embeddings. Seeded with ArBanking77 and AraFinNews datasets.
+3. **Mobile App (Phase 4):** React Native (Expo) iOS/Android app for on-the-go scanning and push notifications.
+4. **Admin Portal:** Protected `/admin` route with Role-Based Access Control (RBAC) to manage users and subscriptions.
+5. **Backend API:** Node.js + Express with JWT authentication, 2FA, and rate-limiting.
+6. **WhatsApp Bot:** Meta Cloud API webhook connecting directly to the Node.js backend.
+7. **Payment Gateway:** Moyasar integration supporting Mada, Sadad, and Apple Pay, with automated webhook-driven subscription upgrades/downgrades.
+8. **AI & RAG Pipeline:** Claude Sonnet backed by MongoDB Atlas Vector Search and `voyage-multilingual-2` embeddings. Seeded with ArBanking77 and AraFinNews datasets.
 
 ---
 
@@ -49,7 +63,8 @@ Hesabi AI consists of 7 distinct, integrated systems:
 | Layer | Technology | Purpose |
 | :--- | :--- | :--- |
 | **Frontend (Marketing)** | Next.js (SSR) | Full Arabic SEO crawlability |
-| **Frontend (App)** | React (SPA) | Highly interactive, state-heavy dashboard |
+| **Frontend (Web App)** | React (SPA) | Highly interactive, state-heavy dashboard |
+| **Frontend (Mobile)** | React Native (Expo) | Cross-platform iOS/Android app |
 | **Backend Core** | Node.js + Express | Async runtime ideal for AI streaming & webhooks |
 | **Database** | MongoDB Atlas | Flexible schema for diverse transaction types |
 | **Vector Search** | MongoDB Vector Search | Native RAG index (no Pinecone required) |
