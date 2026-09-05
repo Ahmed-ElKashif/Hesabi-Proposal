@@ -700,6 +700,45 @@
       color: var(--red);
     }
 
+    .phase-cycle-card {
+      background: linear-gradient(135deg, rgba(20, 23, 29, 0.95), rgba(9, 11, 14, 0.95));
+      border: 1px solid rgba(215, 163, 43, 0.3);
+      border-left: 4px solid var(--gold);
+      border-radius: var(--r);
+      padding: 20px 24px;
+      margin: 20px 0 28px 0;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.35);
+    }
+
+    .phase-cycle-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gold-light);
+      background: rgba(215, 163, 43, 0.15);
+      border: 1px solid rgba(215, 163, 43, 0.3);
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+
+    .phase-cycle-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .phase-cycle-card p {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: var(--canvas);
+      opacity: 0.95;
+      margin: 0;
+    }
+
     @media (max-width: 640px) {
       .qa-steps {
         grid-template-columns: 1fr;
@@ -1541,9 +1580,9 @@
     </p>
     <div class="cover-meta">
       <div class="meta-pill">Prepared for <span>Mr. Malik</span></div>
-      <div class="meta-pill">Team <span>4 Engineers (Phases 1-3)</span></div>
-      <div class="meta-pill">Duration <span>12 Months</span></div>
-      <div class="meta-pill">Structure <span>4 Phases × 3 Months</span></div>
+      <div class="meta-pill">Team <span>4 Dedicated Engineers</span></div>
+      <div class="meta-pill">Duration <span>14 Months (+ 2 Mos Free Warranty)</span></div>
+      <div class="meta-pill">Structure <span>4 Phases × (3 Mos Dev + 2 Wks QA)</span></div>
       <div class="meta-pill">Payment <span>Phase-Linked Milestones</span></div>
       <div class="meta-pill">Date <span>August 2026</span></div>
     </div>
@@ -1555,22 +1594,22 @@
       <div class="phase-pill">
         <div class="num">1</div>
         <div class="label">Daily Operations</div>
-        <div class="months">Months 1–3</div>
+        <div class="months">3 Mos + 2 Wks QA</div>
       </div>
       <div class="phase-pill">
         <div class="num">2</div>
         <div class="label">Accounting &amp; Scale</div>
-        <div class="months">Months 4–6</div>
+        <div class="months">3 Mos + 2 Wks QA</div>
       </div>
       <div class="phase-pill">
         <div class="num">3</div>
         <div class="label">Reports &amp; ZATCA</div>
-        <div class="months">Months 7–9</div>
+        <div class="months">3 Mos + 2 Wks QA</div>
       </div>
       <div class="phase-pill">
         <div class="num">4</div>
         <div class="label">Mobile &amp; AI</div>
-        <div class="months">Months 10–12</div>
+        <div class="months">3 Mos + 2 Wks QA</div>
       </div>
     </div>
   </section>
@@ -1785,8 +1824,17 @@
         <span class="section-num">SECTION 03</span>
         <span class="section-tag">4-Phase Scope of Work</span>
       </div>
-      <h2>12-Month Delivery Roadmap</h2>
+      <h2>14-Month Delivery Roadmap</h2>
       <hr class="gold-rule" />
+
+      <!-- PHASE RHYTHM & DEVELOPER QA NOTICE -->
+      <div class="phase-cycle-card">
+        <div class="phase-cycle-badge">Engineering &amp; QA Standard</div>
+        <h3>🔄 14-Month Total Delivery: 4 Phases × (3 Full Months Dev + 2 Weeks Developer QA) + 2 Months Free Warranty</h3>
+        <p>
+          Every phase follows a disciplined execution standard engineered for top-notch quality: <strong>3 full months dedicated to core feature engineering</strong>, followed immediately by <strong>2 dedicated weeks of QA and rigorous testing conducted directly by our developer team</strong> before handoff for client UAT sign-off. Each phase thus spans <strong>3.5 months (14 weeks)</strong>, bringing the total delivery roadmap to <strong>14 months</strong> (12 full months of feature build + 2 full months / 8 weeks of dedicated developer QA split across all phases) — followed by a <strong>complimentary 2-month bug warranty</strong> (Months 15 &amp; 16).
+        </p>
+      </div>
 
       <!-- PHASE 1 -->
       <div class="phase-section">
@@ -1796,7 +1844,7 @@
             <div class="p-label">Phase</div>
           </div>
           <div class="phase-title-block">
-            <h2>Foundation &amp; Daily Operations — Months 1–3</h2>
+            <h2>Foundation &amp; Daily Operations — Months 1–3 (+ 2 Weeks Developer QA)</h2>
             <div class="phase-goal">
               Goal: A working product to sell, buy, manage stock, and set up the team from day one. Roles &amp;
               permissions built natively.
@@ -1941,34 +1989,30 @@
           </div>
         </div>
         <div class="qa-box">
-          <h4>✅ Phase 1 — Quality Assurance &amp; Validation Protocol</h4>
+          <h4>✅ Phase 1 — Quality Assurance &amp; Validation Protocol (3.5 Months: 3 Mos Dev + 2 Wks Developer QA)</h4>
           <div class="qa-steps">
             <div class="qa-step">
-              <div class="week">Week 10</div>
+              <div class="week">Weeks 1–12 (3 Full Months)</div>
               <div class="desc">
-                Internal QA — all 4 team members test every flow against a
-                written checklist. Every module signed off before UAT.
+                <strong>Core Feature Development:</strong> Full build of auth, RBAC, billing, invoicing, clients, products &amp; inventory with continuous branch integration.
               </div>
             </div>
             <div class="qa-step">
-              <div class="week">Week 11</div>
+              <div class="week">Week 13 (Developer QA Sprint 1)</div>
               <div class="desc">
-                UAT — Mr. Malik + 2–3 pilot users run real transactions on
-                staging. ZATCA QR validated using the official ZATCA
-                verification tool.
+                <strong>Developer QA &amp; Stress Testing:</strong> All 4 team members execute rigorous internal QA against written checklists, RBAC security, rate limits &amp; ZATCA Phase 1 QR checks.
               </div>
             </div>
             <div class="qa-step">
-              <div class="week">Week 12</div>
+              <div class="week">Week 14 (Hardening &amp; Client UAT)</div>
               <div class="desc">
-                Bug fix sprint + security review (OAuth, rate limiting, input
-                sanitization) + production deployment on Hostinger VPS.
+                <strong>Fix Sprint &amp; Client UAT:</strong> Developer bug-fix sprint, staging VPS deployment, developer team QA sign-off, followed by Mr. Malik's pilot user acceptance.
               </div>
             </div>
           </div>
           <div class="qa-gate">
             🔒 <strong>Delivery Gate:</strong> Mr. Malik signs off on UAT
-            checklist before Phase 1 completion payment is released.
+            checklist following our 2-week developer QA sprint before Phase 1 completion payment is released.
           </div>
         </div>
       </div>
@@ -1983,7 +2027,7 @@
             <div class="p-label">Phase</div>
           </div>
           <div class="phase-title-block">
-            <h2>Accounting Engine &amp; Scale — Months 4–6</h2>
+            <h2>Accounting Engine &amp; Scale — Months 4–6 (+ 2 Weeks Developer QA)</h2>
             <div class="phase-goal">
               Goal: Unlock the full double-entry accounting engine, payroll, POS, and multi-branch scaling.
             </div>
@@ -2091,32 +2135,29 @@
           </div>
         </div>
         <div class="qa-box">
-          <h4>✅ Phase 2 — Quality Assurance &amp; Validation Protocol</h4>
+          <h4>✅ Phase 2 — Quality Assurance &amp; Validation Protocol (3.5 Months: 3 Mos Dev + 2 Wks Developer QA)</h4>
           <div class="qa-steps">
             <div class="qa-step">
-              <div class="week">Week 10</div>
+              <div class="week">Weeks 1–12 (3 Full Months)</div>
               <div class="desc">
-                Internal QA — double-entry integrity tested across all modules. Payroll calculations verified against
-                GOSI rules.
+                <strong>Core Accounting Engine Build:</strong> Double-entry ledger, multi-currency, quotes, payment vouchers, payroll, POS &amp; VAT calculation engine.
               </div>
             </div>
             <div class="qa-step">
-              <div class="week">Week 11</div>
+              <div class="week">Week 13 (Developer QA Sprint 1)</div>
               <div class="desc">
-                UAT — Mr. Malik's accountant tests journal entries, cost centers, and runs the quarterly VAT return
-                report on real data.
+                <strong>Double-Entry &amp; Payroll Testing:</strong> Internal developer testing of balance sheet equations, journal integrity across all modules, and GOSI compliance checks.
               </div>
             </div>
             <div class="qa-step">
-              <div class="week">Week 12</div>
+              <div class="week">Week 14 (Hardening &amp; Client UAT)</div>
               <div class="desc">
-                Bug fix sprint + performance testing + production deployment. Accounting reports reviewed for accuracy.
+                <strong>Fix Sprint &amp; Client UAT:</strong> Developer performance tuning, bug fixing, followed by Mr. Malik's accountant reviewing journal entries &amp; VAT return on staging.
               </div>
             </div>
           </div>
           <div class="qa-gate">
-            🔒 <strong>Delivery Gate:</strong> VAT return report and Journal Entries reviewed by Mr. Malik's accountant
-            before Phase 2 payment releases.
+            🔒 <strong>Delivery Gate:</strong> VAT return report and Journal Entries reviewed by Mr. Malik's accountant following our 2-week developer QA sprint before Phase 2 payment releases.
           </div>
         </div>
       </div>
@@ -2131,7 +2172,7 @@
             <div class="p-label">Phase</div>
           </div>
           <div class="phase-title-block">
-            <h2>Advanced Ops &amp; ZATCA — Months 7–9</h2>
+            <h2>Advanced Ops &amp; ZATCA — Months 7–9 (+ 2 Weeks Developer QA)</h2>
             <div class="phase-goal">
               Goal: Full ZATCA Phase 2 compliance, advanced operations (Payroll, POS, Multi-branch), and deep financial
               analytics.
@@ -2249,32 +2290,29 @@
           </div>
         </div>
         <div class="qa-box">
-          <h4>✅ Phase 3 — Quality Assurance &amp; Validation Protocol</h4>
+          <h4>✅ Phase 3 — Quality Assurance &amp; Validation Protocol (3.5 Months: 3 Mos Dev + 2 Wks Developer QA)</h4>
           <div class="qa-steps">
             <div class="qa-step">
-              <div class="week">Week 10</div>
+              <div class="week">Weeks 1–12 (3 Full Months)</div>
               <div class="desc">
-                Internal QA — ZATCA Phase 2 tested in the official ZATCA sandbox environment. All XML schemas validated,
-                cryptographic stamps verified before production.
+                <strong>Core ZATCA &amp; Analytics Build:</strong> ZATCA Phase 2 cryptographic engine, XML generation, multi-branch, asset depreciation &amp; full reporting suite.
               </div>
             </div>
             <div class="qa-step">
-              <div class="week">Week 11</div>
+              <div class="week">Week 13 (Developer QA Sprint 1)</div>
               <div class="desc">
-                UAT — Finance team tests ZATCA Phase 2 submission end-to-end. Mr. Malik reviews all financial reports
-                for accuracy and formatting.
+                <strong>ZATCA Sandbox &amp; Report Audit:</strong> Developer testing in official ZATCA sandbox, XML schema validation, cryptographic stamp checks &amp; report verification.
               </div>
             </div>
             <div class="qa-step">
-              <div class="week">Week 12</div>
+              <div class="week">Week 14 (Hardening &amp; Client UAT)</div>
               <div class="desc">
-                Bug fix sprint + ZATCA sandbox submission receipt shown to client + production deployment.
+                <strong>Sandbox Clearance &amp; UAT:</strong> Developer bug-fix sprint, staging deployment, official sandbox submission receipt presented, and client finance team UAT sign-off.
               </div>
             </div>
           </div>
           <div class="qa-gate">
-            🔒 <strong>Delivery Gate:</strong> Successful ZATCA sandbox submission receipt presented before Phase 3
-            payment releases.
+            🔒 <strong>Delivery Gate:</strong> Successful ZATCA sandbox submission receipt presented following our 2-week developer QA sprint before Phase 3 payment releases.
           </div>
           <div class="phase-dep">
             ⚠️ <strong>External Dependency:</strong> ZATCA Phase 2 requires Mr. Malik to register and receive a CSID
@@ -2295,10 +2333,9 @@
             <div class="p-label">Phase</div>
           </div>
           <div class="phase-title-block">
-            <h2>Mobile App &amp; AI Layer — Months 10–12</h2>
+            <h2>Mobile App &amp; AI Layer — Months 10–12 (+ 2 Weeks Developer QA)</h2>
             <div class="phase-goal">
-              Goal: The competitive moat. A Flutter mobile companion app and AI features no Saudi ERP has. Team: 3
-              developers (2 AI Eng and 1 Mobile Eng).
+              Goal: The competitive moat. Cross-platform Flutter mobile apps (Core ERP + Employee HR) and advanced AI layer. Team: 4 Dedicated Developers — 2 Mobile Engineers (Eng. Abdelrahman Hossam &amp; Eng. Abdelrahman Ali) and 2 AI Engineers (Eng. Mohamed Negm &amp; Eng. Ahmed ElKashif).
             </div>
           </div>
         </div>
@@ -2375,33 +2412,29 @@
           </div>
         </div>
         <div class="qa-box">
-          <h4>✅ Phase 4 — Quality Assurance &amp; Validation Protocol</h4>
+          <h4>✅ Phase 4 — Quality Assurance &amp; Validation Protocol (3.5 Months: 3 Mos Dev + 2 Wks Developer QA)</h4>
           <div class="qa-steps">
             <div class="qa-step">
-              <div class="week">Week 10</div>
+              <div class="week">Weeks 1–12 (3 Full Months)</div>
               <div class="desc">
-                Internal QA — Mobile app tested on physical iOS and Android devices. Arabic NLP accuracy tested across
-                200+ real Saudi SME transaction phrases. OCR accuracy benchmarked against 100+ Saudi invoice formats.
+                <strong>Core Mobile &amp; AI Build:</strong> Flutter cross-platform app, Employee HR app, Claude AI financial analyst, WhatsApp bot &amp; OCR receipt scanner.
               </div>
             </div>
             <div class="qa-step">
-              <div class="week">Week 11</div>
+              <div class="week">Week 13 (Developer QA Sprint 1)</div>
               <div class="desc">
-                UAT — Mr. Malik tests Flutter app, AI chat, and WhatsApp bot on real devices. AI responses reviewed for
-                accuracy on Saudi accounting questions.
+                <strong>Cross-Device &amp; AI Benchmark:</strong> Developer testing on physical iOS/Android devices, Arabic NLP tested across 200+ phrases, OCR accuracy benchmarked on 100+ Saudi receipts.
               </div>
             </div>
             <div class="qa-step">
-              <div class="week">Week 12</div>
+              <div class="week">Week 14 (Hardening &amp; Store Prep)</div>
               <div class="desc">
-                Mobile app submitted to Apple App Store and Google Play Store. Push notifications verified in
-                production. App store submission included in delivery.
+                <strong>Fix Sprint &amp; Store Release:</strong> Developer bug resolution, TestFlight distribution, client UAT of mobile apps &amp; AI chat, followed by App Store submission.
               </div>
             </div>
           </div>
           <div class="qa-gate">
-            🔒 <strong>Delivery Gate:</strong> App Store submission confirmations + AI accuracy benchmark report
-            presented before final payment releases.
+            🔒 <strong>Delivery Gate:</strong> App Store submission confirmations + AI accuracy benchmark report presented following our 2-week developer QA sprint before final payment releases.
           </div>
         </div>
       </div>
@@ -2415,53 +2448,59 @@
         <span class="section-num">SECTION 04</span>
         <span class="section-tag">The Team</span>
       </div>
-      <h2>4 Engineers (Scaling to 3 in Phase 4)</h2>
+      <h2>4 Dedicated Engineers Across All 4 Phases</h2>
       <hr class="gold-rule" />
       <p class="muted">
-        A specialized 4-person engineering team (scaling down to 3 core developers in Phase 4) optimized for AI-assisted
-        development. Two backend/AI experts handle the double-entry accounting engine and RAG pipeline, while two
-        dedicated frontend engineers lead the web interfaces, with one transitioning to lead the Flutter app in Phase 4.
+        A dedicated 4-person senior engineering team operating at full strength across the entire 14-month delivery roadmap
+        (12 months core development + 2 months dedicated developer QA across the 4 phases).
+        In Phases 1–3, two backend engineers architect the double-entry accounting engine and ZATCA compliance while two
+        frontend engineers build the complete web platform. In Phase 4, the entire 4-developer force is deployed into
+        two specialized pairs: <strong>2 Mobile Engineers (Eng. Abdelrahman Hossam &amp; Eng. Abdelrahman Ali)</strong>
+        building the Flutter mobile apps (Hesabi ERP app + Employee HR app), and <strong>2 AI Engineers (Eng. Mohamed Negm &amp;
+        Eng. Ahmed ElKashif)</strong> building the Claude AI financial analyst, WhatsApp bot, and OCR invoice pipeline.
       </p>
       <div class="team-grid">
         <div class="team-card">
           <div class="team-avatar">MN</div>
           <h3>Eng. Mohamed Negm</h3>
-          <div class="team-role">Senior Full Stack Engineer</div>
+          <div class="team-role">Senior Backend &amp; AI Systems Engineer</div>
           <p>
-            Previously built accounting software. Leads backend architecture,
-            double-entry engine, ZATCA integration, and financial compliance logic for Hesabi ERP.
+            Previously built accounting software. Leads backend architecture, double-entry engine, ZATCA Phase 2 compliance,
+            and in Phase 4 pairs with Eng. Ahmed ElKashif on the AI layer: financial prompt engineering, vector embeddings, and
+            compliance guardrails.
           </p>
-          <div class="ai-badge">🏦 Accounting Domain</div>
+          <div class="ai-badge">🤖 AI &amp; Accounting Core</div>
         </div>
         <div class="team-card">
           <div class="team-avatar">AH</div>
           <h3>Eng. Abdelrahman Hossam</h3>
-          <div class="team-role">Frontend & Mobile Lead</div>
+          <div class="team-role">Senior Frontend &amp; Mobile Lead</div>
           <p>
-            React specialist, Arabic RTL interfaces, ERP-style dashboard
-            design. Leads the Hesabi web UI/UX implementation and the Flutter Mobile App.
+            React &amp; Flutter specialist, Arabic RTL interfaces, ERP dashboard design. Leads the web UI/UX in Phases 1–3,
+            and in Phase 4 co-leads the Flutter mobile development alongside Eng. Abdelrahman Ali to deliver the native iOS &amp;
+            Android ERP and HR apps.
           </p>
-          <div class="ai-badge">📱 UI/UX & Mobile Lead</div>
+          <div class="ai-badge">📱 Mobile Lead &amp; UI/UX</div>
         </div>
         <div class="team-card">
           <div class="team-avatar">AA</div>
           <h3>Eng. Abdelrahman Ali</h3>
-          <div class="team-role">Senior Frontend Engineer</div>
+          <div class="team-role">Senior Frontend &amp; Mobile Engineer</div>
           <p>
-            React, component library architecture, responsive design, UX
-            implementation. Works alongside Abdelrahman Hossam to deliver the
-            full web frontend across 30+ ERP modules before the team scales down in Phase 4.
+            React &amp; Flutter engineer, component library architecture, responsive design, UX implementation. Builds the
+            web frontend across 30+ ERP modules in Phases 1–3, and in Phase 4 pairs with Eng. Abdelrahman Hossam as a dedicated
+            Mobile Engineer to deliver the Flutter apps.
           </p>
-          <div class="ai-badge">⚛️ React Components</div>
+          <div class="ai-badge">📱 Mobile &amp; React</div>
         </div>
         <div class="team-card">
           <div class="team-avatar">AE</div>
           <h3>Eng. Ahmed ElKashif</h3>
           <div class="team-role">Backend / AI Engineer</div>
           <p>
-            Backend API, auth systems, Claude AI integration, DevOps.
-            Previously shipped Context Platform — a RAG-based AI document
-            intelligence system using the identical tech stack.
+            Backend API, auth systems, Claude AI integration, DevOps. Previously shipped Context Platform (RAG-based AI
+            document intelligence). In Phase 4, pairs with Eng. Mohamed Negm as an AI Engineer to deliver the Claude AI
+            financial analyst, WhatsApp bot, and OCR pipeline.
           </p>
           <div class="ai-badge">🤖 AI / RAG Systems</div>
           <div class="dev-links">
@@ -2694,27 +2733,27 @@
       <div class="budget-hero">
         <div class="main-price">$5,000 / phase</div>
         <div class="sub-price">
-          Phase-linked milestones · 4-person team (Phases 1-3)
+          Phase-linked milestones · 4 dedicated engineers across all 4 phases
         </div>
         <div class="total">
-          Phase 1–3: $5,000 × 3 + Phase 4 (3 devs): $3,750 =
-          <strong style="color: var(--gold)">$18,750 total</strong>
+          4 Phases × $5,000 / phase (4 dedicated engineers) =
+          <strong style="color: var(--gold)">$20,000 total</strong>
         </div>
         <div class="currency-grid">
           <div class="currency-card">
             <div class="cur-label">USD</div>
             <div class="cur-monthly">$5,000 / phase</div>
-            <div class="cur-total">$18,750 total</div>
+            <div class="cur-total">$20,000 total</div>
           </div>
           <div class="currency-card">
             <div class="cur-label">SAR</div>
             <div class="cur-monthly">SAR 18,750 / phase</div>
-            <div class="cur-total">SAR 70,313 total</div>
+            <div class="cur-total">SAR 75,000 total</div>
           </div>
           <div class="currency-card">
             <div class="cur-label">EGP</div>
             <div class="cur-monthly">EGP 250,000 / phase</div>
-            <div class="cur-total">EGP 937,500 total</div>
+            <div class="cur-total">EGP 1,000,000 total</div>
           </div>
         </div>
       </div>
@@ -2726,7 +2765,7 @@
             <tr>
               <th>Phase</th>
               <th>Team Size</th>
-              <th>Months</th>
+              <th>Duration</th>
               <th>Delivery Focus</th>
               <th>Phase Total</th>
             </tr>
@@ -2735,41 +2774,44 @@
             <tr>
               <td>Phase 1 — Foundation &amp; Daily Operations</td>
               <td>4 devs</td>
-              <td>3</td>
+              <td>3.5 Mos (3 Mos Dev + 2 Wks QA)</td>
               <td>Working SaaS from Day 1</td>
               <td>$5,000</td>
             </tr>
             <tr>
               <td>Phase 2 — Accounting Engine &amp; Scale</td>
               <td>4 devs</td>
-              <td>3</td>
+              <td>3.5 Mos (3 Mos Dev + 2 Wks QA)</td>
               <td>Double-entry + Payroll + POS</td>
               <td>$5,000</td>
             </tr>
             <tr>
               <td>Phase 3 — Reports &amp; ZATCA</td>
               <td>4 devs</td>
-              <td>3</td>
+              <td>3.5 Mos (3 Mos Dev + 2 Wks QA)</td>
               <td>ZATCA Phase 2 + Analytics</td>
               <td>$5,000</td>
             </tr>
             <tr>
               <td>Phase 4 — Mobile &amp; AI</td>
-              <td>3 devs</td>
-              <td>3</td>
-              <td>Flutter + Claude AI + OCR</td>
-              <td>$3,750</td>
+              <td>4 devs (2 Mobile + 2 AI)</td>
+              <td>3.5 Mos (3 Mos Dev + 2 Wks QA)</td>
+              <td>Flutter (ERP + HR) + Claude AI + OCR</td>
+              <td>$5,000</td>
             </tr>
             <tr style="font-weight: 700; background: var(--navy4) !important">
               <td>TOTAL</td>
-              <td>—</td>
-              <td>12</td>
+              <td>4 devs</td>
+              <td>14 Months Total</td>
               <td>Full Enterprise ERP</td>
-              <td style="color: var(--gold)">$18,750</td>
+              <td style="color: var(--gold)">$20,000</td>
             </tr>
           </tbody>
         </table>
       </div>
+      <p class="muted" style="margin-top: 10px; font-size: 0.86rem; color: var(--gold-light);">
+        ✨ <strong>Developer QA &amp; Testing Architecture:</strong> Each of the 4 phases spans <strong>3.5 months (3 full months of feature development + 2 dedicated weeks of developer QA &amp; testing)</strong>, totaling a <strong>14-month delivery roadmap</strong> designed to guarantee top-notch code quality and stability — followed by a <strong>complimentary 2-month post-delivery warranty</strong> (Months 15 &amp; 16), all included at no additional cost.
+      </p>
 
       <h3 class="mt24">2026 Market Cost Comparison</h3>
       <p class="muted" style="margin-bottom: 12px; font-size: 0.9rem">
@@ -2829,18 +2871,18 @@
               </td>
             </tr>
             <tr style="background: var(--navy4) !important">
-              <td><strong>12-Month Total (USD)</strong></td>
-              <td><strong>~$192,000 USD</strong></td>
-              <td><strong>~$67,200 USD</strong></td>
+              <td><strong>14-Month Total (USD)</strong></td>
+              <td><strong>~$224,000 USD</strong></td>
+              <td><strong>~$78,400 USD</strong></td>
               <td style="font-weight: 900; color: var(--gold)">
-                $22,500 USD
+                $20,000 USD
               </td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      <h3 class="mt24">12-Month Payment Schedule</h3>
+      <h3 class="mt24">Phase-Linked Payment Schedule (14-Month Roadmap)</h3>
       <div class="milestone-table comp-wrap">
         <table>
           <thead>
@@ -2876,7 +2918,7 @@
               <td>3</td>
               <td><span class="phase-tag pt1">Phase 1</span></td>
               <td>
-                Phase 1 UAT passed + live on production
+                Phase 1 UAT passed + live on production (after 3 full months dev + 2 weeks developer QA)
               </td>
               <td>$2,000</td>
               <td>SAR 7,500</td>
@@ -2906,7 +2948,7 @@
               <td>6</td>
               <td><span class="phase-tag pt2">Phase 2</span></td>
               <td>
-                Phase 2 UAT passed + production + VAT return reviewed
+                Phase 2 UAT passed + production + VAT return reviewed (after 3 full months dev + 2 weeks developer QA)
               </td>
               <td>$2,000</td>
               <td>SAR 7,500</td>
@@ -2936,7 +2978,7 @@
               <td>9</td>
               <td><span class="phase-tag pt3">Phase 3</span></td>
               <td>
-                Phase 3 UAT passed + ZATCA sandbox receipt + production deployment
+                Phase 3 UAT passed + ZATCA sandbox receipt + production deployment (after 3 full months dev + 2 weeks developer QA)
               </td>
               <td>$2,000</td>
               <td>SAR 7,500</td>
@@ -2945,36 +2987,36 @@
             <tr class="m-row-p4">
               <td>10</td>
               <td><span class="phase-tag pt4">Phase 4</span></td>
-              <td>Phase 4 Kickoff (After Month 10 work)</td>
-              <td>$1,125</td>
-              <td>SAR 4,219</td>
-              <td>EGP 56,250</td>
+              <td>Phase 4 Kickoff: 2 Mobile Devs + 2 AI Devs allocated</td>
+              <td>$1,500</td>
+              <td>SAR 5,625</td>
+              <td>EGP 75,000</td>
             </tr>
             <tr class="m-row-p4">
               <td>11</td>
               <td><span class="phase-tag pt4">Phase 4</span></td>
               <td>
-                Month 11 demo: AI chat + OCR + Flutter beta on TestFlight
-              </td>
-              <td>$1,125</td>
-              <td>SAR 4,219</td>
-              <td>EGP 56,250</td>
-            </tr>
-            <tr class="m-row-p4">
-              <td>12</td>
-              <td><span class="phase-tag pt4">Phase 4</span></td>
-              <td>
-                Phase 4 UAT + App Store submissions
+                Month 11 demo: AI chat + OCR + Flutter ERP &amp; HR beta on TestFlight
               </td>
               <td>$1,500</td>
               <td>SAR 5,625</td>
               <td>EGP 75,000</td>
             </tr>
+            <tr class="m-row-p4">
+              <td>12</td>
+              <td><span class="phase-tag pt4">Phase 4</span></td>
+              <td>
+                Phase 4 UAT + App Store submissions (after 3 full months dev + 2 weeks developer QA)
+              </td>
+              <td>$2,000</td>
+              <td>SAR 7,500</td>
+              <td>EGP 100,000</td>
+            </tr>
             <tr class="m-row-total">
               <td colspan="3">TOTAL</td>
-              <td>$18,750</td>
-              <td>SAR 70,313</td>
-              <td>EGP 937,500</td>
+              <td>$20,000</td>
+              <td>SAR 75,000</td>
+              <td>EGP 1,000,000</td>
             </tr>
           </tbody>
         </table>
@@ -2992,7 +3034,7 @@
         </div>
         <div class="market-card ours">
           <div class="provider">Hesabi Team (This Proposal)</div>
-          <div class="cost">SAR 118,125</div>
+          <div class="cost">SAR 75,000 ($20,000 USD)</div>
         </div>
         <div class="market-card">
           <div class="provider">Daftra (SaaS — not build cost)</div>
@@ -3005,6 +3047,7 @@
           <h4 class="green">✓ What Is Included</h4>
           <ul>
             <li>All deliverables across all 4 phases</li>
+            <li>2 weeks dedicated developer QA &amp; testing after each phase (included free)</li>
             <li>UAT coordination per phase</li>
             <li>Production deployments per phase</li>
             <li>2 revision rounds per phase</li>
@@ -3191,17 +3234,17 @@
           </div>
           <div class="qa-answer-divider"></div>
           <div class="qa-arabic-ans">
-            <strong>فترة ضمان مجانية لمدة شهرين (60 يوماً):</strong> تغطي إصلاح أي أخطاء برمجية أو ثغرات استقرار (Bug
-            fixes &amp; Stabilization) مجاناً وبأعلى أولوية. وبالنسبة لأي ميزات إضافية تُطلب خلال فترة التطوير (الـ 12
-            شهراً): سيتم التحقق مما إذا كانت الميزة ضمن نطاق العمل أو خارجه؛ فإذا كانت خارج النطاق نحدد الميزانية
-            المطلوبة ونعيد جدولتها بشفافية تامة مع إسقاط أي حساب بالساعة؛ وإذا طُلبت بعد انتهاء الـ 12 شهراً يتم الاتفاق
+            <strong>فترة ضمان مجانية لمدة شهرين (الشهران 15 و 16 بعد التسليم النهائي):</strong> تغطي إصلاح أي أخطاء برمجية أو ثغرات استقرار (Bug
+            fixes &amp; Stabilization) مجاناً وبأعلى أولوية. وبالنسبة لأي ميزات إضافية تُطلب خلال فترة التطوير (الـ 14
+            شهراً شاملة فترات الـ QA): سيتم التحقق مما إذا كانت الميزة ضمن نطاق العمل أو خارجه؛ فإذا كانت خارج النطاق نحدد الميزانية
+            المطلوبة ونعيد جدولتها بشفافية تامة مع إسقاط أي حساب بالساعة؛ وإذا طُلبت بعد انتهاء الـ 14 شهراً يتم الاتفاق
             عليها بتعاقد مستقل.
           </div>
           <div class="qa-en-ans">
-            <strong>Complimentary 2-month bug warranty post-delivery:</strong> Covers all software bugs and system
-            stabilization free of charge. Any extra features requested during the 12-month development timeline will be
+            <strong>Complimentary 2-month bug warranty post-delivery (Months 15 &amp; 16):</strong> Covers all software bugs and system
+            stabilization free of charge. Any extra features requested during the 14-month delivery timeline (12 months core development + 2 months dedicated developer QA across phases) will be
             validated: if beyond scope, the budget and schedule will be assessed collaboratively without arbitrary
-            hourly billing. Requests post-12 months are contracted independently.
+            hourly billing. Requests post-14 months are contracted independently.
           </div>
         </div>
 
@@ -3265,21 +3308,21 @@
               <span class="qa-num-badge">Q 06</span>
               <span class="qa-cat-pill">Long-Term Support</span>
             </div>
-            <span class="qa-status-pill pill-blue">Months 13–14 Free Warranty + Custom Roadmap</span>
+            <span class="qa-status-pill pill-blue">Months 15–16 Free Warranty + Custom Roadmap</span>
           </div>
           <div class="qa-question-box">
-            <div class="qa-arabic-q">ما خطة التطوير والصيانة بعد الشهر 12 وما سعرها؟</div>
-            <div class="qa-en-q">What is the development and maintenance plan after month 12 and what is its price?
+            <div class="qa-arabic-q">ما خطة التطوير والصيانة بعد انتهاء التسليم النهائي (الشهر 14) وما سعرها؟</div>
+            <div class="qa-en-q">What is the development and maintenance plan after the 14-month delivery roadmap and what is its price?
             </div>
           </div>
           <div class="qa-answer-divider"></div>
           <div class="qa-arabic-ans">
-            <strong>شهرين مجاناً لمعالجة الأخطاء + خطة تطوير حسب الاحتياج:</strong> يشمل الشهران 13 و 14 ضماناً مجانياً
+            <strong>شهران مجاناً بعد التسليم النهائي (الشهران 15 و 16) لمعالجة الأخطاء + خطة تطوير حسب الاحتياج:</strong> بعد انتهاء الـ 14 شهراً المخصصة لتسليم كافة مراحل النظام واختبارات الجودة المرحلية، يشمل الشهران 15 و 16 ضماناً مجانياً
             كاملاً لمعالجة أي أخطاء برمجية لضمان الاستقرار التام. أما خطط التوسعة وإضافة ميزات جديدة مستقبلاً، فسيتم
             تحديدها وتسعيرها في حينها بناءً على أولويات نمو المنصة وميزانيتكم.
           </div>
           <div class="qa-en-ans">
-            <strong>Months 13 &amp; 14 include free bug-fixing warranty:</strong> Subsequent functional upgrades and
+            <strong>Months 15 &amp; 16 include free bug-fixing warranty post-delivery:</strong> Following the 14-month delivery roadmap (12 months core development + 2 months dedicated developer QA), Months 15 and 16 provide a complimentary full bug-fixing warranty. Subsequent functional upgrades and
             system enhancements will be quoted collaboratively based on your business expansion roadmap.
           </div>
         </div>
@@ -3319,7 +3362,7 @@
               <span class="qa-num-badge">Q 08</span>
               <span class="qa-cat-pill">Quality Assurance &amp; Code Review</span>
             </div>
-            <span class="qa-status-pill pill-green">Senior Lead Reviews + External QA Welcomed</span>
+            <span class="qa-status-pill pill-green">2 Weeks QA per Phase + Senior Lead Reviews</span>
           </div>
           <div class="qa-question-box">
             <div class="qa-arabic-q">ما هي عملية الـ Code Review وكيف تضمنون الجودة قبل كل تسليم؟</div>
@@ -3328,17 +3371,19 @@
           </div>
           <div class="qa-answer-divider"></div>
           <div class="qa-arabic-ans">
-            <strong>مراجعة داخلية يقودها كبار المهندسين + ترحيب كامل بفريق فحص مستقل من طرفكم:</strong> يقود مراجعة جودة
-            الأكواد واختبارات الاستقرار داخلياً كلٌ من المهندس <strong>محمد نجم</strong> (Senior Backend Engineer)
-            والمهندس <strong>عبدالرحمن حسام</strong> (Senior Frontend &amp; Mobile Lead) قبل أي دمج للأكواد. وبالإضافة
-            إلى ذلك، نرحب بشدة إذا رغبتم في الاستعانة بفريق فحص واختبار جودة (QA / Testing Team) من طرفكم بعد كل مرحلة،
-            وسيتعاون كبار مهندسينا معهم مباشرة لاعتماد كل تسليم.
+            <strong>أسبوعان فحص واختبار جودة (QA) من طرفنا كمطورين بعد كل مرحلة (3.5 أشهر لكل مرحلة / 14 شهراً إجمالي التسليم) + مراجعات كبار المهندسين:</strong>
+            تتكون كل مرحلة من 3 أشهر تطوير كاملة متبوعة مباشرة بـ <strong>أسبوعين كاملين من الفحص الشامل واختبارات الجودة المكثفة (QA &amp; Rigorous Testing) من طرفنا نحن المطورين مباشرة</strong>؛
+            وبذلك تستغرق كل مرحلة 3.5 أشهر (14 أسبوعاً)، ليمتد جدول التسليم الفعلي للنظام بالكامل إلى <strong>14 شهراً (12 شهراً تطوير برمجيات + شهران كاملان لفحص الجودة)</strong>، مما يضمن خروج النظام بأعلى معايير الجودة والاستقرار (Top-Notch Quality) قبل مرحلة اختبارات القبول (UAT) وبدء فترة الضمان المجاني (الشهران 15 و 16).
+            تشمل اختباراتنا الداخلية: الأمان، ضغط النظام، دقة العمليات والقيود المحاسبية، وتوافق ZATCA، مع إصلاح فوري لكافة الملاحظات قبل تسليم النسخة لسيادتكم.
+            يقود مراجعة جودة الأكواد واختبارات الاستقرار داخلياً كلٌ من المهندس <strong>محمد نجم</strong> (Senior Backend Engineer) والمهندس <strong>عبدالرحمن حسام</strong> (Senior Frontend &amp; Mobile Lead).
+            كما نرحب بشدة إذا رغبتم في الاستعانة بفريق فحص واختبار جودة مستقل من طرفكم، وسيتعاون كبار مهندسينا معهم مباشرة لاعتماد كل تسليم.
           </div>
           <div class="qa-en-ans">
-            <strong>Senior engineering peer reviews with open external audit:</strong> Code quality is governed
-            internally by Senior Backend Engineer Eng. Mohamed Negm and Senior Frontend &amp; Mobile Lead Eng.
-            Abdelrahman Hossam. Furthermore, we actively welcome your engagement of an independent testing team after
-            every phase.
+            <strong>Dedicated 2-week QA &amp; testing period by our developer team after each phase (3.5 months per phase / 14-month delivery roadmap) + Senior Peer Reviews:</strong>
+            Each phase is structured as 3 full months of feature development followed by 2 dedicated weeks of intensive QA and testing conducted directly by our developer team (making each phase 3.5 months / 14 weeks, and the complete delivery roadmap <strong>14 months</strong>: 12 months core development + 2 months dedicated developer QA) to guarantee top-notch code quality and enterprise stability before handoff for client UAT and the subsequent 2-month free warranty (Months 15 &amp; 16).
+            This developer-led testing sprint covers automated regression suites, API security audits, accounting logic validation, stress testing, and edge-case bug resolution before handing over the build for your User Acceptance Testing (UAT).
+            Code governance and architectural integrity are led internally by Senior Backend Engineer Eng. <strong>Mohamed Negm</strong> and Senior Frontend &amp; Mobile Lead Eng. <strong>Abdelrahman Hossam</strong>.
+            Furthermore, we actively welcome your engagement of an independent testing team to audit and verify each release alongside us.
           </div>
         </div>
 
@@ -3548,28 +3593,17 @@
           <div class="qa-answer-divider"></div>
           <div class="qa-arabic-ans">
             <strong>السعر عادل ومدروس وتنافسي للغاية، ولا يقارن بحجم المخرجات والقيمة:</strong><br />
-            إجمالي الاستثمار هو <strong>$18,750 دولار فقط</strong> (أو <strong>70,313 ريال سعودي</strong>) موزعاً على 12
-            شهراً بنظام الدفعات المرتبطة بالمراحل ($5,000 لكل مرحلة من المراحل 1–3، و $3,750 للمرحلة 4)، لفريق هندسي
-            متفرغ من 4 مهندسين.<br />
+            إجمالي الاستثمار هو <strong>$20,000 دولار فقط</strong> (أو <strong>75,000 ريال سعودي</strong> / <strong>1,000,000 جنيه مصري</strong>) موزعاً بالتساوي على 4 مراحل ($5,000 لكل مرحلة شاملة 3 أشهر تطوير + أسبوعين فحص جودة)، ليمتد جدول التسليم الفعلي إلى <strong>14 شهراً</strong> لفريق هندسي متفرغ من 4 مهندسين بكامل طاقتهم في جميع المراحل (مع تخصيص مهندسين للموبايل ومهندسين للذكاء الاصطناعي في المرحلة الرابعة)، يليه شهران ضمان مجاني كامل (الشهران 15 و 16).<br />
             مقارنة بالسوق:<br />
-            • شركات البرمجة في السعودية تطلب في المتوسط <strong>~$192,000 دولار</strong> سنوياً لنفس النطاق
-            (~$16,000/شهر).<br />
-            • والشركات الخارجية (Offshore) تطلب في المتوسط <strong>~$67,200 دولار</strong> سنوياً (~$5,600/شهر).<br />
-            • بينما يقدم حسابي المنصة المتكاملة (الويب، تطبيقات الموبايل Flutter، ربط الزكاة المرحلة 2، محرك الذكاء
-            الاصطناعي مع عزل تام للبيانات، وتطبيق HR مجاني للموظفين) بإجمالي <strong>$18,750 دولار فقط</strong> (أي
-            بمعدل ~$1,562/شهر للفريق بالكامل). هذا السعر يمثل قيمة استثنائية ونادرة لبناء نظام مالي سحابي متكامل.
+            • شركات البرمجة في السعودية تطلب في المتوسط <strong>~$224,000 دولار</strong> لنفس مدة النطاق (14 شهراً بمعدل ~$16,000/شهر).<br />
+            • والشركات الخارجية (Offshore) تطلب في المتوسط <strong>~$78,400 دولار</strong> لنفس المدة (~$5,600/شهر).<br />
+            • بينما يقدم حسابي المنصة المتكاملة (الويب، تطبيقات الموبايل Flutter للـ ERP ولـ HR الموظفين، ربط الزكاة المرحلة 2، ومحركات الذكاء الاصطناعي مع عزل تام للبيانات) بإجمالي <strong>$20,000 دولار فقط</strong> على مدار الـ 14 شهراً. هذا السعر يمثل قيمة استثنائية ونادرة لبناء نظام مالي سحابي متكامل بأعلى معايير الجودة (Top-Notch Quality).
           </div>
           <div class="qa-en-ans">
             <strong>The pricing is exceptionally fair, transparent, and calibrated far below market
               benchmarks:</strong><br />
-            The total platform investment is <strong>$18,750 USD</strong> (or <strong>SAR 70,313</strong>) structured
-            across 12 months linked to phase milestones ($5,000/phase for Phases 1–3, and $3,750 for Phase 4) for a
-            dedicated senior engineering team.<br />
-            By comparison, Saudi agencies average <strong>~$192,000 USD</strong> (~$16,000/mo) and offshore agencies
-            average <strong>~$67,200 USD</strong> (~$5,600/mo). Hesabi delivers the entire platform (Full Web ERP,
-            Flutter Mobile Apps, ZATCA Phase 2 compliance, custom AI engines, and a complimentary HR mobile app) for
-            just <strong>$18,750 USD total</strong> (~$1,562/month across the team). This represents extraordinary
-            enterprise-grade value with zero engineering compromises.
+            The total platform investment is <strong>$20,000 USD</strong> (or <strong>SAR 75,000</strong> / <strong>EGP 1,000,000</strong>) structured across 4 equal phase milestones ($5,000/phase, with each phase spanning 3 full months dev + 2 weeks developer QA) across a comprehensive <strong>14-month delivery roadmap</strong> for a dedicated 4-engineer team operating at full capacity (featuring 2 dedicated Mobile Engineers and 2 dedicated AI Engineers in Phase 4), followed by a complimentary 2-month bug warranty (Months 15 &amp; 16).<br />
+            By comparison, Saudi agencies average <strong>~$224,000 USD</strong> (~$16,000/mo over 14 months) and offshore agencies average <strong>~$78,400 USD</strong> (~$5,600/mo). Hesabi delivers the entire enterprise platform (Full Web ERP, Flutter Mobile Apps, ZATCA Phase 2 compliance, custom Claude AI engine, WhatsApp bot, OCR scanner, and a complimentary HR mobile app) for just <strong>$20,000 USD total</strong> across all 14 months. This represents extraordinary enterprise-grade value with zero engineering compromises.
           </div>
         </div>
 
